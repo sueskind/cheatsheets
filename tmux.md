@@ -1,5 +1,7 @@
 # tmux
 
+| Command                               | Explanation               |
+| ------------------------------------- | ------------------------- |
 | `tmux new -s [session-name]`          | Create new session        |
 | `tmux ls`                             | List existing sessions    |
 | `tmux attach -t [session-name]`       | Attach to a session       |
@@ -12,12 +14,16 @@ Always `ctrl-b` plus:
 
 ### Sessions
 
+| Key | Explanation     |
+| --- | --------------- |
 | `$` | Rename session  |
 | `s` | List sessions   |
 | `d` | Detach          |
 
 ### Windows
 
+| Key | Explanation         |
+| --- | ------------------- |
 | `c` | Create new          |
 | `,` | Rename window       |
 | `w` | List windows        |
@@ -28,6 +34,8 @@ Always `ctrl-b` plus:
 
 ### Panes
 
+| Key | Explanation             |
+| --- | ----------------------- |
 | `%` | Create horizontal pane  |
 | `"` | Create vertical pane    |
 | `o` | Toggle between panes    |
@@ -47,6 +55,8 @@ Always `ctrl-b` plus:
 
 ## Commands
 
+| Command                                   | Explanation                           |
+| ----------------------------------------- | ------------------------------------- |
 | `tmuxinator new [project]`                | Create or edit project                |
 | `tmuxinator start [project]`              | Start a project                       |
 | `tmuxinator start [project] -n [name]`    | Start a project with a custom name    |
