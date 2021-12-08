@@ -12,5 +12,5 @@ youtube-dl --get-id "<playlist-url>" | xargs -I '{}' -P 5 youtube-dl 'https://yo
 
 Maximum quality 720p:
 ```
--f bestvideo[height<=720]+bestaudio/best[height<=720]
+-f 'bestvideo[height<=720]+bestaudio/best[height<=720]'
 ```
