@@ -14,3 +14,4 @@
  - Remove package and unneeded dependencies: `yay -Rns <package>`
  - Remove unneeded dependencies: `yay -Yc`
  - Get system statistics: `yay -Ps`
+ - Clean cache: `yay -Sc`
