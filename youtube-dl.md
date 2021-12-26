@@ -1,6 +1,12 @@
 
 # youtube-dl cheatsheet
 
+**Default download**
+```bash
+export PLAYLIST=""
+youtube-dl --get-id "$PLAYLIST" | xargs -I '{}' -P 16 youtube-dl -f 'bestvideo[height<=720]+bestaudio/best[height<=720]' 'https://youtube.com/watch?v={}'
+```
+
 **Download playlist in parallel**
 
 5 parallel workers:
