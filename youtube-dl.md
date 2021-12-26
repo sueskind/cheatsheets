@@ -1,6 +1,8 @@
 
 # youtube-dl cheatsheet
 
+Arguably better: [yt-dlp](https://github.com/yt-dlp/yt-dlp)
+
 **Default download**
 ```bash
 export PLAYLIST=""
