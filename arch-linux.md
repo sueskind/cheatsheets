@@ -5,6 +5,7 @@
  - List all packages: `pacman -Q`
  - List all AUR packages: `pacman -Qm`
  - Remove unneeded dependencies: `pacman -Qtdq | pacman -Rns -`
+ - Install previous cached version: `pacman -U /var/cache/pacman/pkg/<file>`
 
 ## yay
  - Update all packages (including AUR packages): `yay -Syu` or `yay`
