@@ -12,5 +12,5 @@ ffmpeg -i <input> -ss <hh>:<mm>:<ss> -c copy <output>
 
 ### Cut video without re-encoding until timestamp
 ```
-ffmpeg**** -to <hh>:<mm>:<ss> -c copy <output>
+ffmpeg -to <hh>:<mm>:<ss> -c copy <output>
 ```
