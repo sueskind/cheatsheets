@@ -9,15 +9,12 @@
 2. Empty file `ssh` on boot partition
 3. File `wpa_supplicant.conf` on boot partition, containing:
    ```
-   country=DE
+   country=US # Your 2-digit country code
    ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
-   update_config=1
-
    network={
-   scan_ssid=1
-   ssid="your_wifi_ssid"
-   psk="your_wifi_password"
-   key_mgmt=WPA-PSK
+       ssid="YOUR_NETWORK_NAME"
+       psk="YOUR_PASSWORD"
+       key_mgmt=WPA-PSK
    }
    ```
 
