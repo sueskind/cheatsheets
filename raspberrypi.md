@@ -2,7 +2,10 @@
 
 #### Headless installation via WiFi/SSH
 
-1. Flash Raspbian image
+1. Flash Raspbian image:
+   ```
+   sudo dd if=<image-file>.img of=<device-listed-with-lsblk> bs=4M conv=fsync status=progress
+   ```
 2. Empty file `ssh` on boot partition
 3. File `wpa_supplicant.conf` on boot partition, containing:
    ```
