@@ -7,6 +7,9 @@
  - Remove unneeded dependencies: `pacman -Qtdq | pacman -Rns -`
  - Install previous cached version: `pacman -U /var/cache/pacman/pkg/<file>`
 
+### pacman config (`/etc/pacman.conf`)
+ - Ignore packages from upgrade: `IgnorePkg = <package1> <package2>`
+
 ## yay
  - Update all packages (including AUR packages): `yay -Syu` or `yay`
  - Update only AUR packages: `yay -Sua`
