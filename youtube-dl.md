@@ -1,12 +1,12 @@
 
-# youtube-dl cheatsheet
+# youtube-dl/yt-dlp cheatsheet
 
 Arguably better: [yt-dlp](https://github.com/yt-dlp/yt-dlp)
 
 **Default download**
 ```bash
 export PLAYLIST=""
-youtube-dl --get-id "$PLAYLIST" | xargs -I '{}' -P 16 youtube-dl -f 'bestvideo[height<=720]+bestaudio/best[height<=720]' 'https://youtube.com/watch?v={}'
+yt-dlp --get-id "$PLAYLIST" | xargs -I '{}' -P 16 yt-dlp -f 'bestvideo[height<=720]+bestaudio/best[height<=720]' 'https://youtube.com/watch?v={}'
 ```
 
 **Download playlist in parallel**
